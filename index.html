@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito&family=Pixelify+Sans&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>3d modeller</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="box">
+                <div class="header-top">
+                    <div class="header-top-icon"><img src="img/logo-main.png" alt="">
+                        <p>3D MODELLER</p>
+                    </div>
+                    <p><a href="#">Telegram</a></p>
+                </div>
+                <div class="header-main">
+                    <p>3D MODELLER</p>
+                </div>
+                <div class="header-bottom">
+                    <ul>
+                        <li>Качественно</li>
+                        <li>Быстро</li>
+                        <li>Бюджетно</li>
+                        <li>Гарантия</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="box">
+            <div class="my-history">
+                <div class="my-history-photo">
+                    <p>Моя история</p>
+                    <p><img src="img/my-photo.jpg" alt=""></p>
+                </div>
+                <div class="my-history-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis reiciendis est voluptatibus
+                        dignissimos
+                        eaque fugiat nobis odit quos ab doloremque dolores atque minus eum consectetur, odio impedit
+                        saepe dolor. Veniam!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="portfolio-main">
+            <div class="box">
+                <div class="portfolio">
+                    <p>Мои работы:</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <ul id="slides">
+                    <li class="slide showing"></li>
+                    <li class="slide"></li>
+                    <li class="slide"></li>
+                    <li class="slide"></li>
+                    <li class="slide"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="prise-main">
+                <div class="prise-main-text">
+                    <h2>Услуги</h2>
+                    <p>Быстро, качественно, с гарантией</p>
+                </div>
+                <div class="prise">
+                    <img src="img/prise.jpg" alt="">
+                    <div class="category-main">
+                        <h2 id="name">3D МОДЕЛЬ НА ЗАКАЗ</h2>
+                        <div class="category">
+                            <p id="category">ГТА 5</p>
+                            <p id="category">ДЕЙЗ</p>
+                            <p id="category">SAMP</p>
+                            <p id="category">РАСТ</p>
+                        </div>
+                    </div>
+                    <div class="prise-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae vero quasi,
+                            praesentium adipisci amet ducimus dignissimos blanditiis quos sit rem aperiam sunt quidem
+                            unde
+                            officia fugiat. Aliquid, a rerum!
+                        </p>
+                        <h2>2500р</h2>
+                    </div>
+
+                </div>
+                <div class="prise">
+                    <img src="img/prise.jpg" alt="">
+                    <div class="category-main">
+                        <h2 id="name">3D СЦЕНА НА ЗАКАЗ</h2>
+                        <div class="category">
+                            <p id="category">ГТА 5</p>
+                            <p id="category">ДЕЙЗ</p>
+                            <p id="category">SAMP</p>
+                            <p id="category">РАСТ</p>
+                        </div>
+                    </div>
+                    <div class="prise-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae vero quasi,
+                            praesentium adipisci amet ducimus dignissimos blanditiis quos sit rem aperiam sunt quidem
+                            unde
+                            officia fugiat. Aliquid, a rerum!
+                        </p>
+                        <h2>2500р</h2>
+                    </div>
+
+                </div>
+                <div class="prise">
+                    <img src="img/prise.jpg" alt="">
+                    <div class="category-main">
+                        <h2 id="name">3D ЭФФЕКТЫ ЗА ЗАКАЗ</h2>
+                        <div class="category">
+                            <p id="category">ГТА 5</p>
+                            <p id="category">ДЕЙЗ</p>
+                            <p id="category">SAMP</p>
+                            <p id="category">Любое</p>
+                        </div>
+                    </div>
+                    <div class="prise-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae vero quasi,
+                            praesentium adipisci amet ducimus dignissimos blanditiis quos sit rem aperiam sunt quidem
+                            unde
+                            officia fugiat. Aliquid, a rerum!
+                        </p>
+                        <h2>2500р</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="box">
+            <div class="footer">
+                <p>СВЯЗЬ СО МНОЙ:</p>
+                <ul>
+                    <li><a href=""><img src="img/discord.png" alt=""></a></li>
+                    <li><a href=""><img src="img/telegram.png" alt=""></a></li>
+                    <li><a href=""><img src="img/youtube.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var slides = document.querySelectorAll('#slides .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 2000);
+
+        function nextSlide() {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].className = 'slide showing';
+        }
+    </script>
+
+</body>
+
+</html>
